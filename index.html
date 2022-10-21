@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/animationKeys.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaQuerys.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CITADEL - Integrador JS - Ignacio Raño</title>
+</head>
+<body>
+    <header>
+        <header>
+            <img src="./assets/img/citadel-logo_white.png" alt="Logo de CITADEL" class="logo" />
+            <nav class="navbar">
+              <div class="menu-label">
+                <i class="fa-solid fa-chart-bar"></i>
+              </div>
+        
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="#hero">Home</a></li>
+                <li><a class="navbar-link" href="#products">Productos</a></li>
+                <li><a class="navbar-link" href="#products">BTC</a></li>
+        
+                <li>
+                  <a href="https://www.youtube.com/c/Nucbaok" target="_blank">Youtube</a>
+                </li>
+                <li>
+                  <a href="https://nucba.com.ar/" target="_blank">Conocenos</a>
+                </li>
+              </ul>
+        
+              <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              </div>
+        
+              <div class="cart">
+                <h2>Tus Productos</h2>
+        
+                <div class="cart-container"></div>
+        
+                <span class="divider"></span>
+        
+                <div class="cart-total">
+                  <p>Total:</p>
+                  <span class="total">$00.99</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+              </div>
+        
+              <div class="overlay"></div>
+            </nav>
+          </header>
+    </header>
+
+    <main>
+      
+        <section id="hero">
+            <div class="hero-info">
+                <h1>La mejor opción para el detaling de tu <span>Auto</span></h1>
+                <p>Elegís, comprás, recibís!</p>
+                <a href="#products">Nuestros Productos</a>
+            </div>
+            <div class="hero-photo">
+                <div class="polaroid tilt-in-tr">
+                    <img src="./assets/img/bg_1.jpg">
+                    <div class="caption-polaroid">Marcamos tendencia</div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="info" class="section-content">
+          <div class="info-container-cards">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="info-text">
+                <h3 class="info-title">Calidad</h3>
+                <p class="info-p">Nuestra prioridad es ofrecerte productos de calidad, que te permitan proteger tu vehículo de la mejor manera.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <div class="info-text">
+                <h3 class="info-title">Precio</h3>
+                <p class="info-p">Por que no siempre lo caro es lo mejor, te ofrecemos productos de calidad a un precio accesible.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="info-text">
+                <h3 class="info-title">Confiabilidad</h3>
+                <p class="info-p">Ya son miles los fanáticos de sus vehículos los que confían en nuestros productos. </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="info-text">
+                <h3 class="info-title">Variedad</h3>
+                <p class="info-p">Diversos productos dedicados al cuidado del automotor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-mask"></div>
+
+        </section>
+
+      <!-- products -->
+      <section id="products">
+        <h2>Nuestros Productos</h2>
+        <!-- categories -->
+        <div class="categories">
+          <button class="category" data-category="futbol"><i class="fa-solid fa-diamond"></i><span>Shampoo</span></button>
+          <button class="category" data-category="futbol"><i class="fa-solid fa-diamond"></i><span>Quick Detail</span></button>
+        </div>
+
+        <!-- Result products -->
+        <div class="products-container">
+
+          <div class="product">
+            <img src="./assets/img/products/boss.png" alt="Boss" messi="">
+            <div class="product-info">
+                <!-- top -->
+                <div class="product-top">
+                    <h3>Boss</h3>
+                    <p>600 ML</p>
+                </div>
+        
+                <!-- mid -->
+                <div class="product-mid">
+                    <div class="product-user">
+                        <img src="./assets/img/user.png" alt="user">
+                        <p>@thetroncous</p>
+                    </div>
+                    <span>6.89 eTH</span>
+                </div>
+        
+                <!-- bot -->
+                <div class="product-bot">
+                    <div class="product-offer">
+                        <div class="offer-time">
+                          
+                            <p>00.00</p>
+                        </div>
+                        <button class="btn-add" data-id="1" data-name="Golden Messi" data-bid="6.89" data-img="./assets/img/products/goldenmessi.png">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <button class="btn-load">Ver Más</button>
+      </section>
+    </main>
+
+    <script src="./assets/js/storage.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
