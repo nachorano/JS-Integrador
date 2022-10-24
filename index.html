@@ -14,7 +14,7 @@
     <title>CITADEL - Integrador JS - Ignacio Raño</title>
 </head>
 <body>
-    <header>
+
         <header>
             <img src="./assets/img/citadel-logo_white.png" alt="Logo de CITADEL" class="logo" />
             <nav class="navbar">
@@ -36,28 +36,50 @@
               </ul>
         
               <div class="cart-label">
+                
                 <i class="fa-solid fa-cart-shopping cart-icon"></i>
               </div>
         
               <div class="cart">
-                <h2>Tus Productos</h2>
+                <h2><i class="fa-solid fa-cart-shopping"></i> Tu Carrito</h2>
         
-                <div class="cart-container"></div>
-        
+                <div class="cart-container">
+                  <!--Producto render-->
+                  <div class="cart-item">
+                    <img src="./assets/img/products/alcaline.png" alt="Nft del carrito">
+                    <div class="item-info">
+                      <h3 class="item-title">The boss</h3>
+                      <span class="item-price">$ 999</span>
+                    </div>
+                    <div class="item-handler">
+                      <span class="quantity-handler down" data-id="1">-</span>
+                      <span class="item-quantity">37</span>
+                      <span class="quantity-handler up" data-id="1">+</span>
+                    </div>
+                  </div>
+                </div>
                 <span class="divider"></span>
-        
+                
+                <div class="cart-subtotal">
+                  <p>Subtotal:</p>
+                  <span class="subtotal">$ 00.99</span>
+                </div>
+                <div class="shipping">
+                  <p>Envio:</p>
+                  <span class="ship">GRATIS</span>
+                </div>
                 <div class="cart-total">
                   <p>Total:</p>
-                  <span class="total">$00.99</span>
+                  <span class="total">$ 00.99</span>
                 </div>
-                <button class="btn-buy">Comprar</button>
+                <button class="btn-buy">Iniciar Compra <i class="fa-solid fa-angle-right"></i></button>
                 <button class="btn-delete">Vaciar carrito</button>
               </div>
         
               <div class="overlay"></div>
             </nav>
           </header>
-    </header>
+    
 
     <main>
       
@@ -126,8 +148,19 @@
         <h2>Nuestros Productos</h2>
         <!-- categories -->
         <div class="categories">
-          <button class="category" data-category="futbol"><i class="fa-solid fa-diamond"></i><span>Shampoo</span></button>
-          <button class="category" data-category="futbol"><i class="fa-solid fa-diamond"></i><span>Quick Detail</span></button>
+          <!--Button-->
+          <div class="category-button-card bg-shampoo">
+            <button class="category" data-category="futbol">Shampoo</button>
+            <div class="overlay-cards"></div>
+          </div>
+          <!---->
+          <!--Button-->
+          <div class="category-button-card bg-quick-detail active">
+            <button class="category" data-category="futbol">Quick detail</button>
+            <div class="overlay-cards"></div>
+          </div>
+          <!---->
+
         </div>
 
         <!-- Result products -->
@@ -136,36 +169,28 @@
           <div class="product">
             <img src="./assets/img/products/boss.png" alt="Boss" messi="">
             <div class="product-info">
-                <!-- top -->
-                <div class="product-top">
-                    <h3>Boss</h3>
+
+                <div class="product-title">
+                    <h3>The Boss</h3>
                     <p>600 ML</p>
                 </div>
         
-                <!-- mid -->
-                <div class="product-mid">
-                    <div class="product-user">
-                        <img src="./assets/img/user.png" alt="user">
-                        <p>@thetroncous</p>
-                    </div>
-                    <span>6.89 eTH</span>
+                <div class="product-description">
+                  <p>Acondicionador de cubiertas por excelencia. Producto elaborado a base de silicona de alta duración y rendimiento.</p>
                 </div>
         
-                <!-- bot -->
-                <div class="product-bot">
-                    <div class="product-offer">
-                        <div class="offer-time">
-                          
-                            <p>00.00</p>
-                        </div>
-                        <button class="btn-add" data-id="1" data-name="Golden Messi" data-bid="6.89" data-img="./assets/img/products/goldenmessi.png">Add</button>
-                    </div>
+                <div class="product-footer">
+                  <span class="btn-cart"  data-id="1" data-name="Golden Messi" data-bid="6.89" data-img="./assets/img/products/goldenmessi.png">
+                    <!-- <button class="btn-add" data-id="1" data-name="Golden Messi" data-bid="6.89" data-img="./assets/img/products/goldenmessi.png"></button> -->
+                    <a href="#" class="btn-add"></a>
+                  </span>
+                  <span class="product-price">$ 9999</span>
                 </div>
             </div>
         </div>
 
         </div>
-        <button class="btn-load">Ver Más</button>
+        <button class="btn-load">+ Productos</button>
       </section>
     </main>
 
