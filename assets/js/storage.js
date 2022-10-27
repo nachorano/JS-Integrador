@@ -305,4 +305,31 @@ const productsData = [
     category: "interior",
     productImg: "./assets/img/products/uva_shake.png",
   },
+  {
+    id: 34,
+    name: "MASH MELOn",
+    description:
+      "Acondicionador de plásticos interiores con terminación satinada y aroma a melón. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/melon.png",
+  },
+  {
+    id: 35,
+    name: "FRUTY CREAM",
+    description:
+      "Acondicionador de plásticos interiores con terminación satinada y aroma a frutilla. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/fruty.png",
+  },
+  {
+    id: 36,
+    name: "TRIM LEATHER",
+    description:
+      "Acondicionador de cueros de base acuosa. Nutre y restaura devolviendo flexibilidad y evitando el deterioro del paso del tiempo. Posee una excelente terminación con fragancia a cuero.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/leather.png",
+  },
 ];
