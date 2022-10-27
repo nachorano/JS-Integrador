@@ -163,11 +163,146 @@ const productsData = [
   },
   {
     id: 19,
-    name: "falta editar",
+    name: "ALCALINE WHEELS",
     description:
-      "APC Premium desarrollado para los más exigentes detailers del mercado.",
+      "Limpiador alcalino elaborado para limpiar múltiples superficies con gran poder de remoción de grasas. Fórmula concentrada.",
     capacity: "600 ML",
     category: "limpiadores",
-    productImg: "./assets/img/products/inferno_gel.png",
+    productImg: "./assets/img/products/alcaline.png",
+  },
+  {
+    id: 20,
+    name: "FORMULE CONQUEST",
+    description:
+      "Desengrasante con gran poder de limpieza, desarrollado para ser aplicado en llantas y motores. Fórmula concentrada.",
+    capacity: "600 ML",
+    category: "limpiadores",
+    productImg: "./assets/img/products/formula_conquest.png",
+  },
+  {
+    id: 21,
+    name: "X TAR",
+    description:
+      "Removedor de brea con excelente poder de limpieza.",
+    capacity: "600 ML",
+    category: "limpiadores",
+    productImg: "./assets/img/products/x_star.png",
+  },
+  {
+    id: 22,
+    name: "BUG REMOVER",
+    description:
+      "Limpiador exclusivo para remover insectos con gran precisión, fácil de usar y seguro para ser aplicado en todo tipo de superficies.",
+    capacity: "600 ML",
+    category: "limpiadores",
+    productImg: "./assets/img/products/bug_remover.png",
+  },
+  {
+    id: 23,
+    name: "CLEAN VISION",
+    description:
+      "Limpiador con agentes anti-fog que previene el empañado de vidrios.",
+    capacity: "600 ML",
+    category: "limpiadores",
+    productImg: "./assets/img/products/clean_vision.png",
+  },
+  {
+    id: 24,
+    name: "IRON WARNING",
+    description:
+      "Descontaminante férrico de llantas el cual actúa eficazmente sobre el polvo de las pastillas de freno.",
+    capacity: "600 ML",
+    category: "limpiadores",
+    productImg: "./assets/img/products/iron.png",
+  },
+  {
+    id: 25,
+    name: "NTP",
+    description:
+      "Restaura y reacondiciona plásticos y gomas del exterior dejando una terminación satinada. No daña ni deteriora la superficie. Posee pigmentos negros con aroma a café.",
+    capacity: "600 ML",
+    category: "exterior",
+    productImg: "./assets/img/products/ntp.png",
+  },
+  {
+    id: 26,
+    name: "blue magic",
+    description:
+      "Acondicionador de exterior a base de siliconas. Brinda un excepcional rendimiento y fácil de usar. Otorga una terminación brillante y restauradora.",
+    capacity: "600 ML",
+    category: "exterior",
+    productImg: "./assets/img/products/blue_magic.png",
+  },
+  {
+    id: 27,
+    name: "GEL SHINE",
+    description:
+      "Acondicionador de cubiertas por excelencia. Producto elaborado a base de silicona de alta duración y rendimiento que otorga una terminación brillante en la superficie.",
+    capacity: "600 ML",
+    category: "exterior",
+    productImg: "./assets/img/products/gel_shine.png",
+  },
+  {
+    id: 27,
+    name: "HITS BONES",
+    description:
+      "Protector de pasa ruedas y chasis, muy sencillo de utilizar. Restaura el color de la superficie y brinda protección contra el agua y el paso del tiempo.",
+    capacity: "600 ML",
+    category: "exterior",
+    productImg: "./assets/img/products/hit_bones.png",
+  },
+  {
+    id: 28,
+    name: "BUBBLE GUM",
+    description:
+      "Acondicionador de plásticos interiores con terminación natural y aroma a chicle. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/bubble_gum.png",
+  },
+  {
+    id: 29,
+    name: "vice trim",
+    description:
+      "Acondicionador de plásticos interiores con terminación natural y aroma a ananá. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/vice_trim.png",
+  },
+  {
+    id: 30,
+    name: "TRIM LOOK CANDY",
+    description:
+      "Acondicionador líquido de plásticos interiores con terminación satinada y aroma a banana dulce. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/trim_candy.png",
+  },
+  {
+    id: 31,
+    name: "HOLY GLOSS",
+    description:
+      "Acondicionador de plásticos interiores con terminación brillante y aroma a multifruta. Brinda protección contra Rayos UV y disminuye el deterioro de superficies",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/holy_gloss.png",
+  },
+  {
+    id: 32,
+    name: "CANDY CREAM",
+    description:
+      "Acondicionador cremoso de plásticos interiores con terminación satinada y aroma a banana dulce. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/candy_cream.png",
+  },
+  {
+    id: 33,
+    name: "UVA SHAKE",
+    description:
+      "Acondicionador de plásticos interiores con terminación satinada y aroma a uva. Brinda protección contra Rayos UV y disminuye el deterioro de superficies.",
+    capacity: "600 ML",
+    category: "interior",
+    productImg: "./assets/img/products/uva_shake.png",
   },
 ];
