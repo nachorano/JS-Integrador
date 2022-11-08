@@ -7,6 +7,7 @@ const productsData = [
     capacity: "600 ML",
     category: "quickDetail",
     productImg: "./assets/img/products/Cherru_Quick.png",
+    price: 900,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const productsData = [
     capacity: "600 ML",
     category: "quickDetail",
     productImg: "./assets/img/products/extreme_detail.png",
+    price: 1170,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const productsData = [
     capacity: "600 ML",
     category: "quickDetail",
     productImg: "./assets/img/products/american_shine.png",
+    price: 1250,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const productsData = [
     capacity: "600 ML",
     category: "quickDetail",
     productImg: "./assets/img/products/waterless.png",
+    price: 890,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const productsData = [
     capacity: "600 ML",
     category: "cera",
     productImg: "./assets/img/products/illusion_wax.png",
+    price: 2090,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const productsData = [
     capacity: "90 GR",
     category: "cera",
     productImg: "./assets/img/products/cera_pure.png",
+    price: 3150,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const productsData = [
     capacity: "600 ML",
     category: "sellador",
     productImg: "./assets/img/products/boss.png",
+    price: 1600,
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const productsData = [
     capacity: "600 ML",
     category: "sellador",
     productImg: "./assets/img/products/crush.png",
+    price: 1950,
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const productsData = [
     capacity: "600 ML",
     category: "sellador",
     productImg: "./assets/img/products/seal_it_all.png",
+    price: 2650,
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/atomic.png",
+    price: 680,
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/banana.png",
+    price: 1280,
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/wax.png",
+    price: 750,
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/supreme.png",
+    price: 1450,
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/pure_foam.png",
+    price: 1000,
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/elite_shampoo.png",
+    price: 1170,
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/dip_club.png",
+    price: 1550,
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ const productsData = [
     capacity: "600 ML",
     category: "shampoo",
     productImg: "./assets/img/products/hyper_black.png",
+    price: 1100,
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/inferno_gel.png",
+    price: 1150,
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/alcaline.png",
+    price: 1990,
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/formula_conquest.png",
+    price: 1118,
   },
   {
     id: 21,
@@ -187,6 +207,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/x_star.png",
+    price: 1890,
   },
   {
     id: 22,
@@ -196,6 +217,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/bug_remover.png",
+    price: 1092,
   },
   {
     id: 23,
@@ -205,6 +227,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/clean_vision.png",
+    price: 1092,
   },
   {
     id: 24,
