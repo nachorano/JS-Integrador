@@ -5,8 +5,8 @@ const $overlay = document.querySelector(".overlay");
 const $barsBtn = document.querySelector(".menu-label");
 const $btnLoad = document.querySelector('.btn-load');
 const $categories = document.querySelector('.categories');
-
 const $categoryList = document.querySelectorAll(".category");
+const $products = document.querySelector(".products-container");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -14,8 +14,23 @@ const saveLocalStorage = (cartList) => {
   localStorage.setItem("cart", JSON.stringify(cartList));
 };
 
+const splitProducts = size => {
+  let dividedProducts = [];
+  for (let i = 0; i < productsData.length; i += size) {
+    dividedProducts.push(productsData.slice(i, i + size));
+  }
+  return dividedProducts;
+};
+
+const productsController = {
+  dividedProducts: splitProducts(6),
+  nextProductsIndex: 1,
+  productsLimit: splitProducts(6).length,
+};
+
+
 const renderProduct = product => {
-    const { id, name, productImg, capacity, description} = product;
+    const { id, name, productImg, capacity, description, price} = product;
     return `
     <div class="product">
     <img src="${productImg}" alt="${name}">
@@ -31,14 +46,38 @@ const renderProduct = product => {
         </div>
 
         <div class="product-footer">
-          <span class="btn-cart"  data-id="${id}" data-name="Golden Messi" data-bid="6.89" data-img="${productImg}">
+          <span class="btn-cart"  data-id="${id}" data-name='${name}' data-price='${price}' data-img="${productImg}">
             <a href="#" class="btn-add"></a>
           </span>
-          <span class="product-price">$ 9999</span>
+          <span class="product-price">$ ${price}</span>
         </div>
     </div>
-</div>`;
+  </div>`;
   };
+
+  const renderDividedProducts = (index = 0) => {
+    $products.innerHTML += productsController.dividedProducts[index].map(renderProduct).join("");
+  };
+  
+  const renderFilteredProducts = (category) => {
+    const productList = productsData.filter(
+      (product) => product.category === category
+    );
+  
+    $products.innerHTML = productList.map(renderProduct).join("");
+  };
+
+  const renderProducts = (index = 0, category = undefined) => {
+    if (!category) {
+      renderDividedProducts(index);
+      return;
+    }
+    renderFilteredProducts(category);
+  };
+
+
+
+
 
 const toggleMenu = () => {
   $barsMenu.classList.toggle("open-menu");
@@ -58,8 +97,22 @@ const toggleCart = () => {
   $overlay.classList.toggle("on-overlay");
 };
 
+const closeOnScroll = () => {
+  if (
+    !$barsMenu.classList.contains("open-menu") &&
+    !$cartMenu.classList.contains("open-cart")
+  )
+    return;
+
+  $barsMenu.classList.remove("open-menu");
+  $cartMenu.classList.remove("open-cart");
+  $overlay.classList.remove("on-overlay");
+};
+
+
+
 const init = () => {
-    renderProducts();
+  renderProducts();
   $cartBtn.addEventListener("click", toggleCart);
   $barsBtn.addEventListener("click", toggleMenu);
   window.addEventListener('scroll', closeOnScroll);

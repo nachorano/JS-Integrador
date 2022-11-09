@@ -2,7 +2,7 @@ const productsData = [
   {
     id: 1,
     name: "cherry quick",
-    decription:
+    description:
       "Quick Detail con aroma a cereza, formulado para otorgar un brillo único.",
     capacity: "600 ML",
     category: "quickDetail",
@@ -237,6 +237,7 @@ const productsData = [
     capacity: "600 ML",
     category: "limpiadores",
     productImg: "./assets/img/products/iron.png",
+    price: 2500,
   },
   {
     id: 25,
@@ -246,6 +247,7 @@ const productsData = [
     capacity: "600 ML",
     category: "exterior",
     productImg: "./assets/img/products/ntp.png",
+    price: 3130,
   },
   {
     id: 26,
@@ -255,6 +257,7 @@ const productsData = [
     capacity: "600 ML",
     category: "exterior",
     productImg: "./assets/img/products/blue_magic.png",
+    price: 2000,
   },
   {
     id: 27,
@@ -264,6 +267,7 @@ const productsData = [
     capacity: "600 ML",
     category: "exterior",
     productImg: "./assets/img/products/gel_shine.png",
+    price: 4970,
   },
   {
     id: 27,
@@ -273,6 +277,7 @@ const productsData = [
     capacity: "600 ML",
     category: "exterior",
     productImg: "./assets/img/products/hit_bones.png",
+    price: 1150,
   },
   {
     id: 28,
@@ -282,6 +287,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/bubble_gum.png",
+    price: 1582,
   },
   {
     id: 29,
@@ -291,6 +297,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/vice_trim.png",
+    price: 900,
   },
   {
     id: 30,
@@ -300,6 +307,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/trim_candy.png",
+    price: 2099,
   },
   {
     id: 31,
@@ -309,6 +317,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/holy_gloss.png",
+    price: 1999,
   },
   {
     id: 32,
@@ -318,6 +327,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/candy_cream.png",
+    price: 2099,
   },
   {
     id: 33,
@@ -327,6 +337,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/uva_shake.png",
+    price: 1700,
   },
   {
     id: 34,
@@ -336,6 +347,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/melon.png",
+    price: 1305,
   },
   {
     id: 35,
@@ -345,6 +357,7 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/fruty.png",
+    price: 1801,
   },
   {
     id: 36,
@@ -354,5 +367,6 @@ const productsData = [
     capacity: "600 ML",
     category: "interior",
     productImg: "./assets/img/products/leather.png",
+    price: 1800,
   },
 ];
