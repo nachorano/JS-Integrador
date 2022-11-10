@@ -23,9 +23,9 @@ const splitProducts = size => {
 };
 
 const productsController = {
-  dividedProducts: splitProducts(6),
+  dividedProducts: splitProducts(8),
   nextProductsIndex: 1,
-  productsLimit: splitProducts(6).length,
+  productsLimit: splitProducts(8).length,
 };
 
 
@@ -33,7 +33,9 @@ const renderProduct = product => {
     const { id, name, productImg, capacity, description, price} = product;
     return `
     <div class="product">
-    <img src="${productImg}" alt="${name}">
+    <div class="product-img">
+      <img class="img-card" src="${productImg}" alt="${name}">
+    </div>
     <div class="product-info">
 
         <div class="product-title">
@@ -75,9 +77,45 @@ const renderProduct = product => {
     renderFilteredProducts(category);
   };
 
+  const changeShowMoreBtnState = (category) => {
+    if (!category) {
+      $btnLoad.classList.remove("hidden");
+      return;
+    }
+    $btnLoad.classList.add("hidden");
+  };
 
 
+  const changeBtnActiveState = (selectedCategory) => {
+    const categories = [...$categoryList];
+    categories.forEach((categoryBtn) => {
+      if (categoryBtn.dataset.category !== selectedCategory) {
+        categoryBtn.classList.remove("active");
+        return;
+      }
+      categoryBtn.classList.add("active");
+    });
+  };
 
+
+  const changeFilterState = (e) => {
+    const selectedCategory = e.target.dataset.category;
+    changeBtnActiveState(selectedCategory);
+    changeShowMoreBtnState(selectedCategory);
+  };
+
+
+  const applyFilter = (e) => {
+    if (!e.target.classList.contains("category")) return;
+    changeFilterState(e);
+    if (!e.target.dataset.category) {
+      $products.innerHTML = "";
+      renderProducts();
+    } else {
+      renderProducts(0, e.target.dataset.category);
+      productsController.nextProductsIndex = 1;
+    }
+  };
 
 const toggleMenu = () => {
   $barsMenu.classList.toggle("open-menu");

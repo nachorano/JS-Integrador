@@ -206,7 +206,7 @@ const productsData = [
       "Removedor de brea con excelente poder de limpieza.",
     capacity: "600 ML",
     category: "limpiadores",
-    productImg: "./assets/img/products/x_star.png",
+    productImg: "./assets/img/products/x_tar.png",
     price: 1890,
   },
   {
