@@ -1,0 +1,245 @@
+
+/*LOGIN*/
+.section-container.bg-login{
+    background: rgba(0, 0, 0, 0.6) no-repeat center/cover url(../img/bg_1.jpg);
+    background-blend-mode: darken;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+     
+}
+
+.bg-overlay{
+    background-color: var(--dark-gray-black);
+    
+}
+
+.login-form{
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 70px 0;
+    opacity: 100;
+}
+
+i.icon-log{
+    color: var(--dark-gray); 
+    font-size: 25px;
+    margin: 15px;
+}
+
+.login-form input{
+    font-size: 20px;
+    color: var(--dark-gray);
+    border: 0;
+    padding: 10px 5px;
+    width: 80%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray);
+
+}
+
+.login-form input::placeholder{
+    color: var(--gray);
+}
+
+.login-form input:focus , .login-form input:active{
+    border: none;
+    outline: none;
+
+}
+
+.title-login{
+    margin: 40px 0;
+    
+}
+
+.btn-login{
+    background-color: var(--dark-water-green);
+    color: var(--dark-gray-black);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-login:hover{
+    background-color: var(--light-water-green);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-register-login{
+    color: var(--dark-gray);
+
+}
+
+.btn-register-login:hover{
+    color: var(--dark-gray-black);
+    font-weight: 600;
+
+}
+
+/*cellphones*/
+@media (max-width:576px){
+    .login-form{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/*REGISTER*/
+
+.section-container.bg-register{
+    background-color: var(--dark-gray-black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-register{
+    background-color: var(--white);
+    width: 50vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.container-register h2{
+    color: var(--dark-gray-black);
+    font-size: 24px;
+
+}
+
+.nav-back{
+    margin: 15px 0;
+}
+
+.nav-back i, .nav-back a{
+    color: var(--dark-gray-black);
+    font-weight: 800;
+}
+
+.nav-back i{
+    padding: 0 5px 0 0;
+    font-size: 20px;
+}
+
+.img-register{
+    background: rgba(0, 0, 0, 0.2) no-repeat 50% 0%/cover url(../img/bg-register.jpg);
+    background-blend-mode: darken;
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.form-register{
+    width: 40%;
+    padding: 0 30px;
+}
+
+.form-register form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 10px;
+    
+}
+
+.form-register label{
+    color: var(--dark-gray-black);
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.form-register form input{
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: var(--dark-gray-black);
+    background-color: var(--white);
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--dark-gray-black);
+}
+
+.form-register form input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% ;
+    background-size: 25px;
+}
+
+.form-register form input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% ;
+    background-size: 25px;
+}
+
+.btn-register{
+    padding: 5px 0;
+    margin: 10px 0 ;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: var(--dark-water-green);
+    color: var(--dark-gray-black);
+    transition: all 0.5s ease-in;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-register:hover{
+    background-color: var(--light-water-green);
+    border: 0;
+    transition: all 0.5s ease-out;
+    font-weight: 700;
+}
+
+/*tablet*/
+@media (max-width:972px){
+    .container-register{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .img-register{
+        background-size: cover;
+    }
+}
+
+/*Cellphones*/
+@media (max-width: 576px){
+    .container-register{
+        flex-direction: column;
+        
+        
+    }
+    .img-register{
+        order: 3;
+        width: 100%;
+        
+    }
+
+    .form-register{
+        width: 90%;
+        margin: 40px 0;
+    }
+}
