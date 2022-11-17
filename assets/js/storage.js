@@ -6,7 +6,7 @@ const productsData = [
       "Quick Detail con aroma a cereza, formulado para otorgar un brillo único.",
     capacity: "600 ML",
     category: "quickDetail",
-    productImg: "./assets/img/products/Cherru_Quick.png",
+    productImg: "./assets/img/products/Cherru_Quick.PNG",
     price: 900,
   },
   {
